@@ -1,0 +1,141 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+p{
+    padding-top: 3em;
+    line-height: 2em;
+    font-size: 15pt;
+}
+
+
+.aboutname{
+    font-family: cursive;
+    padding-left: 3em;
+    padding-top: 3em;
+
+}
+
+
+
+
+.mepic{
+    padding-top: 3em;
+    padding-left: 3em;
+    height: 100%;
+    border-radius: 25%;
+    padding-right: 2em;
+}
+
+
+/* hero */
+
+.hero-overlay-text {
+  z-index: 5;
+  height: calc(100vh - 50px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-overlay-text {
+  margin-top: 0rem;
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.call-to-action-btn {
+  /* background-color: rgba(253, 253, 253, 1); */
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid #black;
+  padding: 10px 0;
+  text-decoration: none;
+  width: 15rem;
+  text-align: center;
+  transition: all 200ms;
+  box-shadow: 0 2px 0px rgba(0,0,0,.3);
+  /* position: absolute; */
+
+}
+
+.position1 {
+    margin-left: 50%;
+    margin-bottom: 99%;
+
+}
+
+.position2 {
+    margin-bottom:1.75em;
+    margin-left: 12em;
+}
+.position3{
+    margin-bottom:1.75em;
+    margin-right: 8em;
+
+}
+
+.call-to-action-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 1px rgba(0,0,0,.3);
+}
+
+.violin{
+    display: block;
+    position: absolute;
+    transform: rotate(60deg);
+    /* width: 50%; */
+    width: 500px;
+    /* margin-left: 500px;
+    margin-top: 400px; */
+    margin-left: 35%;
+    margin-top: 30%;
+
+}
+
+
+.name_position {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 57%;
+    font-family: cursive;
+    font-size: 3rem;
+}
+
+
+
+
+.wrapper {
+    color: black;
+    background-image: radial-gradient(circle, rgb(34, 200, 227), rgb(34, 145, 227), rgb(2, 63, 108));
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    /* grid-gap: 10px; */
+    grid-template-columns: repeat(3, 1fr);
+    font-family: roboto;
+    grid-template-areas:
+        /* "header  header" */
+        "nav     nav    nav "
+        "sidebar content  . "
+        ".      .         . "
+        "footer    ad  ad ";
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
